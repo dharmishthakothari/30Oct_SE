@@ -1,0 +1,224 @@
+1st Nov
+
+C Language / Programming 
+
+Program ? set of instruction 
+Programming ? language programming / logic 
+Software ? collection of program 
+
+C, C++ , python , java ,ruby .....
+
+C basic fundas 
+variables 
+data types
+operator
+conditional stmts 
+loops
+array
+functions
+string
+file handling
+
+
+program sofware 
+C programs ? Dev 
+C is procude language 
+each stmt is in procedure/function
+program 
+12+12
+23+34
+56+45
+Library / header file - functions use 
+
+block 
+{
+}
+
+int main() - int - data type
+main - function name from where execution starts
+
+
+complie - check syntax - compiler 
+run/execute - output 
+
+printf - function  - inbuilt
+
+each stmt in c is terminated by ;
+
+
+Comments - > Non executable part 
+Genrally for dumentation and for information we are writing comment
+
+comments are of 2 types 
+1. single line ->//
+2. multile line -> /* */
+
+
+Variables ? 
+
+12+12
+a=12
+b=12
+a+b
+
+variables are idetifier whose can be change.
+eg name,c_number,address,bdate
+a=4545;
+
+variable have rules 
+1. declare 
+2. use
+
+Variables are of any type
+
+c_number = 123123213
+name = 
+
+
+4th Nov - 
+
+	C - comments 
+    	c program structure 
+	1. header files 
+        2. function declare { }
+	3. stmt
+   	4. closing smt	- 
+
+comments - to understand the code , non executable part , 
+	2 1 //
+	2. /* */ 
+	
+include<stdio.h>
+header file - functions 
+print
+
+functions 
+int main() - execution starts 
+
+-> data types  - which type of data store is specifiy by data types  
+->variables - indentifier ,whose value can be change - name,address ...
+
+C int , float ,double , char , bool , long 
+
+
+Numeric - int , float , double ,long
+boolean - bool
+characters/string = char 
+
+c_no= , age 
+
+int age - int 
+long c_no - long
+float - for 
+- percentage
+double - for decimal values - formula
+
+naming convention 
+
+declaration intilization 
+
+age=20;
+
+address = "C G Road"
+
+c_no=234567;
+
+each statement in c is ended with ;
+
+
+printing value then we have to use formate specifiers 
+%d
+%f
+%s
+
+accepting input from user 
+
+variables 
+data types
+printf ,scanf
+
+	Operators 
+		1. Arithmatic +,-,*,/,%(modules)
+		2. Relational - >,<,>=,<=,==,!= 
+		3. Logical - && , || ,!
+		4. bit wise - & , ! ,<< , >>
+		5. size of operator
+		6. ternary operator
+
+6th Nov
+ relation operator 
+
+ 12>2 = True
+ 12<2 = False
+
+
+12>2 = 1
+
+Logical operator - combine 2 or more conditions together then use logical operators
+&& all the conidtions must be true then it returns 1
+|| either the condition is true then it returns 1
+
+
+num1 value num2 must greater and num1 must be greater then 100
+num1>num2 && num1>100  = True-1
+num1>num2 && num1>100  = 0
+
+
+num1>num2 || num1>100  = True
+
+Condition1	Condition2	&&	||
+True		True		1	1
+True		False		0	1
+False		True		0	1
+Flase		False		0	0
+
+
+num1=120 num2=20
+num1>num2 && num1>100  = 1
+num1>num2 || num1>100  = 1
+
+num1=10 num2=200
+num1>num2 && num1>100  = 0
+num1>num2 || num1>100  = 0
+
+num1=120 num2=220
+num1>num2 && num1>100  = 0
+num1>num2 || num1>100  = 1
+
+
+Bitwise Operator
+
+5= 0101
+15 = 1111
+
+&
+5&15
+  0101
+& 1111
+  0101 =5
+
+5|15
+  0101
+| 1111
+  1111 =15
+
+
+		2^4	2^3	2^2 	2^1	2^0
+64	32	16	8	4	2	1
+
+			0	1	0	1	
+			1	1	1	1
+
+
+Ternary Operator - to check condition 
+?:
+condition?True:False
+
+12>2?12:2 = 12
+12<2?12:2=2 
+
+Lab task : All the practicals related to Operators 
+          Ternary opertaor with user input
+		Print max nuber	
+
+
