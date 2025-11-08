@@ -221,4 +221,69 @@ Lab task : All the practicals related to Operators
           Ternary opertaor with user input
 		Print max nuber	
 
+8th Nov :
+
+sizeof give size of given variable/value
+sizeof(12) = 4
+sizeof(45.34) = 8
+
+
+decimal float-double
+float f=23.23f;
+double d=34.23;
+
+sizeof(23.34f)
+
+
+conditional stmt - conditions 
+
+based on condition eg. if percentage 80 up gift 
+ 70 another gift
+50 no gift
+
+if
+if-else
+if-elseif
+
+if(condition)
+{
+	stmt
+}
+
+checking number is positive 
+
+- print bigger number from 2 numbers 
+
+- 
+input Enter number = 2
+output 2 is positive
+
+input -12
+output -12 is nagetive
+if(num>0)
+
+Lab task : user input marks greater then 80 then print A grade else print B grade
+
+enter age - check age is between 1-100 
+
+Lab task : accept marks from user and check if marks is in between 80 to 100 print Grade A
+
+if
+if else
+if -else if
+postive - negative 
+
+Lab task : enter age 
+
+0-2 print infant
+3- 17 - minor
+18 - 50 - adult
+50 - senior
+
+Lab task : Grade A - marks between 80-100
+          Print Grade B - marks between 60-80
+          Print Grade C - marks between 50-60
+          otherwise print Fail
+
+
 
