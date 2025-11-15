@@ -338,9 +338,86 @@ break -
 Lab Task - Prime number -Perfect number -Argstrong number
 
 
+15th Nov : 
+
+Prime number 
+
+Number which is devisable by 1 and itself
+
+input number =20
+ 1 ,2
+
+input number = 21
+2 , 3
+
+input number = 15
+2,3
+
+input number = 31
+2,3,4,5,6,7,8,9,10,11,12,13,14,15,16....32
+PRIME number 
+
+input number 17
+2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+PRIME
+17%2 == 0 not PRIME
+17%3
+17%4
+
+input number 25 
+2,3,4,5
+Not prime 
+
+input number 5 
+2 - 4
+5%2=1
+5%3=
+
+---Check prime between 1- 100
+1 ---- Not Prime 
+2--- Prime
+3--- 2 Prime
+4--- 2 Not Prime 
+5 ---2,3,4, Prime 
+6 ---2
+7 --- 2,3,4,5,6
+
+-----------
+
+Count no_of_digits 
+
+number = 6754 output 4
+input 78900 output 5
+input 2312345 output 7
+
+6754 = 6
+7
+5
+4
+
+
+num%10
+6754%10 = 4
+6754/10 = 675
+
+675%10 = 5
+675/10 = 67
+
+67%10 = 7
+67/10 = 6
+
+6%10 = 6
+
+Lab Task : REverse number 
+- Count no. of Prime and not prime from 1-100
+
+
+
+
 
 
 
 
      
+
 
