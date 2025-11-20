@@ -369,6 +369,64 @@ for(i=1;i<=num;i++)
 2 2 
 1
 
+20th Nov
+
+Array is collection of elements under same name 
+students roll number 
+int[] student_rollNo;
+int student_rollNo[20];  
+//student_rollNo it contains 20 elements 
+
+-stores one continues memory location 
+- arrays are always accessed thru index 
+- array index starts with 0
+
+4
+	10
+	20
+	30
+	10
+
+Sum = 70 
+
+
+5
+	1
+	2
+	11
+	20
+	1
+
+sum 1+2+11+20+1
+
+
+sum = 
+0+1 =1
+1+2 =3
+3+11 = 14
+14 +20 =34 
+34 + 1 =35
+
+Add only even numbers  number
+
+Lab task : 
+1.      Accept number from user and count even and odd numbers 
+2. 	Accept number from user and add only those numbers which are divisable by 3 and 7
+3. Accept numbers from user and add only even index numbers 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
