@@ -415,7 +415,58 @@ Lab task :
 3. Accept numbers from user and add only even index numbers 
 
 
+user will ask number 
+5
+-11
+-23
+-33
+-67
+-23
 
+-max = array[0]
+max = 11
+if max>array[1]
+	11>23 
+	max=array[1]
+-max=23
+	max>array[2]
+	23>33
+	max=array[2]
+
+Max value = 67 
+
+if(max>array[i])
+{
+	max=array[i];
+}
+
+-- accesending order array 
+
+-11
+-23
+-33
+-67
+-23
+
+11>23
+11
+23>33
+23
+33>67
+33
+67>23
+23
+
+Lab task : 
+ Count Frequnecy of array elements .
+11
+12
+13
+11
+
+11 - 2
+12 - 0
+13 - 0
 
 
 
