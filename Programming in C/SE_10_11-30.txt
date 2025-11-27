@@ -548,6 +548,69 @@ Lab task :
 3. sum of all the element of 2D array
 
 
+- 27th Nov 
+  - create 2 array of 2x2 matrix and elements enter by user
+
+1  2
+2  3
+
+2nd matrix
+11 11
+12 12
+
+Ans Matrix
+12 13
+14 15
+
+Tab task : Add 2 arrays dynamically  - 2 matrix and ans matrix
+2 - sum of diagomal elements 
+
+1	2	3
+11	11	11
+12	12	12
+1+11+12 = 24
+
+1	1
+13	14
+1+14 = 15
+
+1	2	3
+11	12	13
+Not possible 
+
+FUNCTIONS - To perfrom specific task eg. To print , we are using print function 
+            To accept value from user we are using scanf() 
+	2 Types 
+	1. User defined (hum bana rahe hain - main() )
+	2. In -built (already there in library , we are using it - printf(),scanf())
+
+	Funcions have name
+	arguments - passing
+	return type - function return something
+	syntax 
+	return_type function_name(parameter)
+	{
+		stmt
+		return 
+	}
+
+creating function which add 2 numbers 
+
+-Function Declaration
+-Function implementation
+-Function calling
+
+- create function to check no is even or odd
+
+Lab task : Create menu driven program 
+1. Check Prime number
+2. Check Even number
+3. Multilication Table 
+4. Exit
+
+with using function
+
+
 
 
 
