@@ -610,6 +610,16 @@ Lab task : Create menu driven program
 
 with using function
 
+29th 
+
+Menu Drivern with function calling
+1. Addtion
+2. mulicarion 
+3. Division
+4. Substracction
+5. exit
+Enter Your Choice 2 
+
 
 
 
