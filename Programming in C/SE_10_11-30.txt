@@ -683,6 +683,28 @@ Student data store
 	int contat_no;
 	char address[50];
 
+9th Dec
+  - loops 
+  - array
+  - functions
+  - structure 
+  - string function
+  - operators 
+  - variable 
+ - patterns
+
+  structure  - multiple data 
+   student  -name,marks , roll_no,address...
+  employee  - name , id , salary ,department , designation
+  book    - title , autoher name , price , no of pages 
+
+9th Dec Lab task : 1. Book structure - array - dynamic - each value should be enterd by user
+2. create function to print BookDetails whose price is more then specified price 
+3. Write book details in txt file
+
+
+
+
 
 
 
