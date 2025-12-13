@@ -702,6 +702,27 @@ Student data store
 2. create function to print BookDetails whose price is more then specified price 
 3. Write book details in txt file
 
+12th Dec
+C++
+	Diffentiate : C / C++
+				Procedure oerinted / Object oriented 
+				header files
+				OOPS concept
+
+cout -- console ouput
+cin -- console input 
+
+read 2 numbers from user
+
+conditional stmt - if , if -else ,if-elseif
+control stmt - break , continue
+loops - for ,do while ,while
+array - 1D ,2D
+
+Lab task : add matrix (accept no of rows and column from user)
+Lab taks : add diagonal element from array
+
+OOPS concept 
 
 
 
