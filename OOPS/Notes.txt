@@ -1,0 +1,51 @@
+16th Dec
+  OOPS - object oreiented Programming 
+ OOP Features 
+
+1. class  - It's is blueprint of an object.
+            It is collection of object
+            It is type of object
+            It is not real entity 
+            It has a data member/state and member function/behaviour
+
+      eg. Vehical  - color,price,break,body,no_of_wheels - data members
+                      driving - function
+          Human  - ear ,eyes ,nose , hands.... - data members 
+                        speaking , reading, eating - function 
+
+        Person - id,name,address ,c_no - data members
+                  displayDetails , getDetails - member funcitons 
+
+
+
+
+2. object  - It is real entity 
+             It is type of class 
+              It has it own data and function 
+3. inheritance  - parent - child ---- Property of one class can use property of another class - reusability 
+                'is a' relationship Employee is Person 
+                                    Truck is Vehical
+               1. single 
+               2. Multilevel
+               3. multiple 
+               4 Hiearchical
+               5 Hybrid
+
+4. Polymorphisum
+5. Encalsulation
+6. Abstraction
+
+Create class Employee having data eid , name ,salary,department and acept this data from user and display it
+
+Constructor - to initlize object 
+             - have same as class name 
+            - doesn't return value 
+            - called automatecally 
+Construvtors vs method 
+
+-Destructor 
+~classname - release memoery
+
+Lab Task : Use array in Employee class
+
+
