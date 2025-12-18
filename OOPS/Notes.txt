@@ -43,9 +43,50 @@ Constructor - to initlize object
             - called automatecally 
 Construvtors vs method 
 
+18th Dec
+    OOPS 
+      class - blueprint of an object
+              data members and member function
+              Employee data memebers - id,name,salary,department
+                      member functions - display(),getDetails()
+              class is nothing until you are creating object of it 
+              class is collection of object
+    object - type of class
+             real entity 
+
+Book class having isbn , title ,autour and price 
+- creating constructor to inilize object 
+
+
+
 -Destructor 
 ~classname - release memoery
 
 Lab Task : Use array in Employee class
+
+
+create class called Shape having one data member called name
+1 member function calculateArea which return 0
+
+
+---> Create a class Product with:
+
+Fields: name, price
+Method: displayDetails()
+
+
+Lab Task ---->
+Phone (brand, model, price) 
+Menu driven program 
+1. Add Phone
+2. View all phone
+3. Search phone
+4. exit
+
+
+
+
+
+
 
 
