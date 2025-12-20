@@ -76,14 +76,35 @@ Method: displayDetails()
 
 
 Lab Task ---->
-Phone (brand, model, price) 
+  Phone (brand, model, price) 
 Menu driven program 
 1. Add Phone
 2. View all phone
 3. Search phone
 4. exit
 
+20th Dec
+  class
+  object
+  inheritance  -- property of one class can use property of another class - resuablility 
+                Parent - child
 
+Lab task :  constructor definition 10 write
+
+Inhertiance - 
+single    - one parent and one child - one super and one sub
+Multilevel  - GrandParent - Parent - Child
+Multiple  - Mother/Father - child
+Heierchical  - A B --both classes are exteing the C
+Hybrid  - mixing of any above 
+
+Lab Task : Hierchical and Hybrid
+class A
+class B , public A
+class C public A
+
+
+  polymorphisum
 
 
 
