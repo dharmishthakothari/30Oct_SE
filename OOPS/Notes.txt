@@ -106,6 +106,42 @@ class C public A
 
   polymorphisum
 
+23rd Dec 
+
+public , private , protected 
+
+access modifers - 
+public - available all over
+private - within class only
+protected - within subclass 
+
+
+Polymorphisum --- 
+Ability to take more then one form .
+More then one form - krish 
+addition - 2 numbers  , 5 addtion ,3 float , 2 int & 3 float
+
+2 Types 
+1. Compile time/static binding - 
+    eg. Method overloading / operator overloading
+    Method overloading means method name is same but agrgument/parameters are different
+    addition(int,int)
+    addition(float,int,float)
+    addition(int,float)
+
+Operator Overloading 
+12+23
+23.67+435
+345.546+345345
+Person p,p1;
+
+Point p1(2,3)
+Point p2(12,23);
+add Point(14,26);
+p1+p2
+
+2. Runtime - eg Method overriding 
+
 
 
 
