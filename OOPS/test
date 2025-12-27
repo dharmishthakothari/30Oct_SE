@@ -1,1 +1,76 @@
 
+1	"Create class called Distance having feet and inches as data.
+And have 3  methods get,add,sub and display distance.
+
+Distance 1 feet,inches : 10 ,2
+Distance2 feet,inches  :12,5 
+
+Distance1 : 
+        Feets : 10
+        Inches: 2
+Distance2 : 
+        Feets : 12
+        Inches: 5
+Distance3 : 
+        Feets : 22
+        Inches: 7
+Distance4 : 
+        Feets : -3
+        Inches: 9 "
+2	"Read and print details of a student using class program.
+
+Student(roll_no,name,total,percentage)
+getDetails() , putDetails()
+"
+3	Print multiple student details using Array of Objects. (Use above class)
+4	"Create class called StudentBasic (name,age,gender) having 2 methods getBasicInfo() , displayBasicInfo()
+
+Create another class called StudentResult(total,percentage,grade) having 2 methods getResultInfo , displayResultInfo()
+
+In main() create object of derived class and get and display all details of student."
+5	"Create 3 class(BasicInfo , DeptInfo ,Employee)
+
+BasicInfo (id,name,gender method : getBasicInfo())Data are protected and method is public.
+
+DeptInfo(dept_name,assignedWork(string),timeTocomplete method : getDeptInfo() Data are protected and method is public.
+
+Employee Inherit above class private also create 2 methods getEmployeeDetails and displayEmployeeDetails()
+(Multiple Inheritance)"
+6	"Create 3 class(BasicInfo , DeptInfo ,LoanInfo)
+
+BasicInfo (id,name,gender method : getBasicInfo())Data are protected and method is public.
+
+DeptInfo(dept_name,assignedWork(string),timeTocomplete method : getDeptInfo() Data are protected and method is public.
+Inherite BasicInfo class privately
+
+LoanInfo(load_details,amount ) method : getLoanInfo,displayLoanInfo Data are protected and method are public 
+Inherite BasicInfor Privately.
+
+In main() Get Department Information and print these information and also get Loan information and print these details.
+(Hierchical Inheritance)"
+7	
+8	Write a program for unary minus (-) operator overloading.
+9	Write a program of Unary logical NOT (!) operator overloading.
+10	Write a program to create a constructor with default arguments.
+11	Write a program to overload Unary increment (++) and decrement (--) operator.
+12	C++ program that demonstrates method overriding by using base and derived classes.
+13	Create a base class Shape with a virtual function draw(). Derive classes like Circle, Rectangle, and Triangle and override the draw() function.
+14	"A class representing a bank account that has a static member variable to keep track of the number of account objects created.
+
+
+Hint :
+Create a  class BankAccount.It has a static member variable “numberOfAccounts” which keeps track of the number of account objects created. 
+The static member function “getNumberOfAccounts” returns the value of this variable.
+Data Members : accountNumber,balance
+function : diposite , withdraw"
+15	"A class representing a car that has a static member variable to keep track of the total distance traveled by all car objects.
+
+Hint : class Car has a static member variable “totalDistance” which keeps track of the total distance traveled by all car objects. 
+The static member function “getTotalDistance” returns the value of this variable. 
+Data members : id,milege (“mileage” that keeps track of the distance traveled by the individual car)
+function : drive , getMilege"
+16	Write a program to write and read text in/from file
+17	Write a program to append into file.
+18	Write and read object values in the file using read and write function
+	Write program to overload two constructors, one to set the name and age of a student with no parameters, and the second to set the name and age of a student with a two-parameter.
+	Write a program to overload three constructors, one to set the area with no parameters, the second to set the area with one parameter, and the third to set the area with two parameters.
