@@ -165,6 +165,42 @@ Point operator+(Point other)
 12<=90 === false
 p1<=p2 
 
+27th Dec 
+ Overloading - same method name and argument are diffrent  - within same class
+ Overriding - same name and same argument  -- within parent-child
+
+virtual function 
+
+Abstraction  --- showing only essential details and hiding other things .
+Pure virtual function 
+
+virtual int calculateArea()=0;
+
+Lab Task :
+3 classes 
+Bank  - calcualteInterest(int amount) -- virtual/pure virtual 
+ICICI - override calcualteInterest(int amount) --- it will implemented accouring to ICICI rule 
+SBI  - overdide calcualteInterest(int amount) --- implementation 
+
+
+Encapsulation --- wrapping data and members into single unit
+class is use to achive this
+data are private and methods are public 
+
+
+Inline function /Friend function 
+
+inline - within line --control is not passed to function instead it will perform at the place 
+-faster execution
+-less code 1/2 line 
+
+p.display()
+    display ---logic
+p1.display()
+p3.display()
+
+
+
 
 
 
