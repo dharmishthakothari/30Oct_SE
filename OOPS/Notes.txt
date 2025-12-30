@@ -199,7 +199,28 @@ p.display()
 p1.display()
 p3.display()
 
+30th Dec 
+ --- Abstraction ? showing only essential detail and hide other details 
+                   pure virtual - no body
+                    virtual void display()=0;  //pure virtual function
+                    virtual void display()
+                    {
+                      ....
+                    }      //virtual function 
 
+--inline - small bock of code within line
+
+friend function - friend class
+--shared private /protected data
+
+-->this - refers to the current object 
+int c_no;
+Person(int c_no)
+{
+  this->c_no=c_no;
+}
+  
+        
 
 
 
