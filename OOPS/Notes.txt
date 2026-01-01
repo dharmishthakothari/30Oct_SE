@@ -220,7 +220,21 @@ Person(int c_no)
   this->c_no=c_no;
 }
   
-        
+1st Jan 
+  friend  - private and procted data 
+  this - referce to the current object
+
+File Handling  - 
+    open
+    read
+    write 
+    close
+
+getline 
+
+Labtask : read whole file from another location 
+        2. copy file 
+        3. data write from console --> jya sudhi END 
 
 
 
