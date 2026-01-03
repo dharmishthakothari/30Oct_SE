@@ -236,7 +236,22 @@ Labtask : read whole file from another location
         2. copy file 
         3. data write from console --> jya sudhi END 
 
+3rd Jan
 
+-- > fiend function 
+--file handling  --- open ,read ,write ,close ,append,copy
+
+static keyword 
+---tops student information 100 -- id,name,address,c_no,course,batch ....location ,copmany name
+---employees 1000 --- id,name,address,departmenet,salary 
+
+static is belongs to class not to object  --access thru class with scope resolution :: operator
+function 
+variable --- initlize only onces
+
+
+Recursion - function calls itself
+ 
 
 
 
