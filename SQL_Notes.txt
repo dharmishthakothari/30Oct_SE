@@ -1,0 +1,52 @@
+DATABASE --->store data
+          Manipulation  , insertion,delete,update,search 
+DBMS - Database management system
+      -- data stores on table 
+        --- multiple tables , database 
+RDBMS -- Relational database management system --- table related 
+
+Tools --> Mysql , SQLServer , MS-access ,oracle 
+
+MYSQL 
+
+SQL --> structure query language
+
+SQL -- database --Table/Object --data --query 
+
+Types query 
+1. DDL      Data definition Language    --- create ,alter ,drop (related to table)
+2. DML      Data Manipulation Langauge --- insert ,update ,delete  (related to data)
+3. DQL      Data Query Langauge      ---select 
+4. DCL      Data control Langaufe --- grant/revoke 
+
+Student_table 
+roll,name,marks --table fieled 
+101,'Bhavya,120  --- data
+102 ,Disha ,200 ---data
+
+1. To create databse 
+
+--- > create database db1
+---> use db1
+
+Create table 
+
+create table <<table_name>> (field_name datatype(size) ,field_name datatype(size)  , field_name datatype(size) ,
+field_name datatype(size) ....)
+
+data types -- numeric(int,decimal) , string ,datetime ,object 
+
+create table student(roll_no int,s_name varchar(20) ,age int)
+
+insert into <<table_name>> values(101,'Disha','disha@gmail.com')
+
+constraints  ---
+1. Primary key  --- To uniquely indentify record,not dublicate value  e.g roll_no ,emp_id 
+2. Not null --- 
+3. foreighn key --- references to another table 
+4. default -- set default value to field 
+
+
+create table student(roll_no int primary key,s_name varchar(20) not null ,age int);
+
+
