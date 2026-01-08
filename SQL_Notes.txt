@@ -49,4 +49,92 @@ constraints  ---
 
 create table student(roll_no int primary key,s_name varchar(20) not null ,age int);
 
+8th Jan
 
+create table employee 
+(eid int primary key,
+ename varchar(20),
+email varchar(20) not null,
+city varchar(10) default "ahmedabad"
+);
+
+select * from employee;
+
+insert into employee values(1,"Paresh","Paresh@gmail.com","Baroda");
+insert into employee(eid,ename,email) 
+values(11,"Ramesh","ramesh@gmail.com");
+
+
+select * from employee;
+
+insert into employee values(2,"Paresh","pa@gmail.com","Surat"),
+(3,"qwert","q@gmail.com","Surat"),
+(4,"sasa","G@gmail.com","Bhavnagar"),
+(5,"cccc","c@gmail.com","Baroda");
+
+select * from employee;
+
+--forighn key 
+
+
+student 
+bhavya - surname - adress -- c_no--fees details--education details --- SE  -- 10:11_30 : facultyname , address,technology
+Disha -surname -aaddress -c_no - ffes details --education --se -10:1130 :facult....
+
+
+Master 
+Student_Master
+sid , sname , address , gender ,education ....
+
+Faculty_master
+fid , fname ,address ,gender ,eduication ....
+
+Batch_Master
+batch_id  timing duration technology
+101         10-11:30 2M          SE           
+
+batch_details
+batch_detail_id   sid   fid  batch_id 
+101                101  101    101
+102                201  101    101
+103                301  101    101          
+
+Normalization   --dublicate removes 
+
+Employee 
+eid(PK)          name          j_date          email          salary          education  did(FK)
+
+department 
+did(PK)          dname          description
+101          Finanace          fskdfjhsfkjshf
+102          Production          .,mxvxc.v,
+
+ * from employee;
+
+
+create table Department(did int primary key,
+dname varchar(20),
+description varchar(200)
+);
+
+create table employee1(eid int primary key,
+ename varchar(20),
+email varchar(20),
+salary int,
+did int,
+foreign key(did) references Department(did)
+);
+
+insert into Department values(1,"Production","Department Production"),
+(2,"Finance","Finance Deparement"),
+(3,"Software","Software Department"),
+(4,"HR","HR Department");
+
+select * from Department;
+
+insert into employee1 values(101,"emp1","emp1@gmail.com",23000,1),
+(102,"asdemp1","emp1@gmail.com",29000,2),
+(103,"qwwemp1","emp1@gmail.com",20000,2),
+(104,"sdsemp1","emp1@gmail.com",21000,11);
+
+select * from employee1;
