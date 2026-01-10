@@ -138,3 +138,26 @@ insert into employee1 values(101,"emp1","emp1@gmail.com",23000,1),
 (104,"sdsemp1","emp1@gmail.com",21000,11);
 
 select * from employee1;
+
+
+10th Jan
+
+Primary key    - To uniquely identify a record dept_id,emp_id
+Forighn key    - To reference to another table Employee table dept_id is my FK
+
+
+Course table           -- cid(PK) ,cname , duration_in_month , fees
+Student table          -- sid(PK) ,sname , address , bdate , email
+Enrollment table       -- enrol_id(PK) , sid(FK) ,cid(FK) ,date_enrollment
+
+comments are -- and /*  */
+DML- insert , update ,delete
+DQL - select - won't affect data
+
+select , and-or,like,order by , in, where ,between and 
+
+select * from tablename;
+
+--select col1,col2,col3 from tablename;
+
+
