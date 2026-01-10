@@ -1,0 +1,40 @@
+create table course(cid int primary key,course_name varchar(20),duration_in_month int,fees int);
+
+create table student(sid int primary key,sname varchar(20),address varchar(50),b_date date,email varchar(20));
+
+create table enrollment(eid int primary key,course_id int,student_id int,enrol_date date,foreign key (course_id) references course(cid),
+foreign key (student_id) references student(sid));
+
+
+describe enrollment;
+
+insert into course values(1,"Python Development",3,20000),
+(2,"FrontEnd",6,50000),
+(3,"API Development",2,12000),
+(4,"Flutter ",2,18000),
+(5,"Java",4,23000);
+
+insert into student values(101,'Diya',"C G Road","2000/02/11","d@gmail.com"),
+(201,'Disha',"C G Road",'2001/12/11',"wwwd@gmail.com"),
+(202,'Ami',"S G Highway",'2000/02/11',"d@gmail.com"),
+(203,'Umang',"Nikol",'2002/09/23',"umang@gmail.com"),
+(204,'prince',"S G Highway",'2006/02/20',"prince@gmail.com");
+
+insert into enrollment values(8001,3,202,'2025-11-20'),
+(8002,2,203,'2025-11-09'),
+(8003,4,204,'2025-06-19'),
+(8004,5,202,'2025-05-15'),
+(8005,1,203,'2025-09-12');
+
+select * from student ;
+select * from course;
+select * from enrollment;
+
+
+update course set course_name="Java Development" where cid=5;
+
+select * from course;
+
+-- delete from student where sid=202;
+
+alter table student drop email;
