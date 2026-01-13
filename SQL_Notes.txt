@@ -160,4 +160,78 @@ select * from tablename;
 
 --select col1,col2,col3 from tablename;
 
+13th Jan 
+
+--display student data
+  select * from student
+--- fetch/display student name and address from student table  
+          select sname,address from student;
+--fetch courname and fees from course table 
+          select course_name,fees from course
+
+--fetch enrolment id, student id and enrollment date from entrollment table
+
+--fetch course details whose fees is more then 20000
+- select * from course where fees>20000
+
+fetch course details whose fees is more then 20000 and duration is more then 5 months 
+select * from course where fees>20000 and duration_in_month>5;
+
+fetch student details who are living in Nikol
+-select * from student where address="Nikol"
+
+fetch courses whose duration is in 2 to 5 month 
+select * from course where duration_in_month between 2 and 5
+
+fetch student details who leaves in nikol and c g road  --in
+select * from student where address in("nikol","C G Road")
+
+where , between and , in , and ,or 
+
+fetch course details whose fees is more then 20000 or duration is more then 5 months 
+select * from course where fees>20000 or duration_in_month>5
+
+fetch student details  student name , alphabetically 
+select * from student
+select * from student order by sname
+
+
+select * from student order by sname desc
+
+fetch student details whose name start with s
+like 
+% , _
+select * from student where sname like 's%'
+
+fetch student details whose name ends with a
+select * from student where sname like '%a';
+
+fetch student details whose name contains i;
+select * from student where sname like '%i%';
+
+fetch student name whose name's second letter h;
+select * from student where sname like '_h%';
+
+fetch student name whose name's last second letter h;
+select * from student where sname like '%h_';
+
+fetch student name whose name contains 5 letters 
+select * from student where sname like '_____';
+
+
+select * from enrollment;
+
+
+joining 
+student name ---student 
+entrolmment details --- enrolment 
+sid ---join 
+
+select eid,sname,course_id,enrol_date from enrollment,student
+where student.sid=enrollment.student_id;
+
+
+
+
+
 
