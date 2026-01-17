@@ -231,7 +231,61 @@ select eid,sname,course_id,enrol_date from enrollment,student
 where student.sid=enrollment.student_id;
 
 
+17th Jan
+    database create
+    tables create /alter/drop  DDL
+    data enter / insert /delete/update  DML
+    Constraints - PK,FK,Not NULL 
+    queries select  where between and,and ,or, in ,like ,order by ,desc 
 
 
+select * from employees where year(hire_date)=2023
+
+select emp_name,year(hire_date) as 'Joining year',month(hire_date) from employees
+
+select * from employees where month(hire_date)=9
+
+select * from employees where dept_id in (2,4)
+
+select * from employees where dept_id=2 or dept_id=4
+
+select count(dept_id) as 'No of Department' from departments
+
+Labtask :
+
+CREATE TABLE customers (
+    cust_id INT PRIMARY KEY,
+    cust_name VARCHAR(50),
+    city VARCHAR(50),
+    email VARCHAR(100),
+    join_date DATE
+);
+
+CREATE TABLE products (
+    prod_id INT PRIMARY KEY,
+    prod_name VARCHAR(50),
+    category VARCHAR(30),
+    price DECIMAL(10,2),
+    stock INT
+);
+
+CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    cust_id INT,
+    order_date DATE,
+    status VARCHAR(20),
+    FOREIGN KEY (cust_id) REFERENCES customers(cust_id)
+);
+
+CREATE TABLE order_items (
+    order_item_id INT PRIMARY KEY,
+    order_id INT,
+    prod_id INT,
+    quantity INT,
+    FOREIGN KEY (order_id) REFERENCES orders(order_id),
+    FOREIGN KEY (prod_id) REFERENCES products(prod_id)
+);
+
+enter sample data in all tables 
 
 
