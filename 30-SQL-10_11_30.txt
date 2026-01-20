@@ -37,4 +37,30 @@ select * from course;
 
 -- delete from student where sid=202;
 
+
 alter table student drop email;
+
+
+select emp_name,dept_name,salary from employees,departments
+where departments.dept_id=employees.dept_id;
+
+select emp_name,dept_name,salary from employees inner join
+departments on 
+departments.dept_id=employees.dept_id;
+
+select emp_name,dept_name,salary from employees left join
+departments on 
+departments.dept_id=employees.dept_id;
+
+
+select emp_name,dept_name,salary from employees right join
+departments on 
+departments.dept_id=employees.dept_id;
+
+select dept_name,avg(salary),sum(salary),min(salary),max(salary) from employees,departments
+where departments.dept_id=employees.dept_id
+group by dept_name;
+
+select dept_name,count(*)as 'Total no of Employees' from employees,departments
+where departments.dept_id=employees.dept_id
+group by dept_name;
