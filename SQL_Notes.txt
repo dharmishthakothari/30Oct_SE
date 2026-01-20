@@ -288,4 +288,29 @@ CREATE TABLE order_items (
 
 enter sample data in all tables 
 
+20th Jan
+  when we have fetch data from more then 1 table then we have to joining
+
+Display employee name, department name, and salary for all employees.
+  employees , department joining on bases of common field
+
+when there is query like dept wise , each dept  group by clause , aggregate funtion (avg,min,max,sum,count)
+
+Lab Task :
+
+Queries 
+
+Display product names with their stock quantity.
+Show customers whose name starts with “S”.
+Display the cheapest product.
+Show each customer’s name and the total value of their delivered orders.
+Show the number of “Delivered” vs “Cancelled” orders.
+Find customers who have never placed an order.
+List all products that have been ordered more than 2 times.
+
+
+
+
+
+
 
