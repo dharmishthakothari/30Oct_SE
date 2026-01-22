@@ -308,9 +308,27 @@ Show the number of “Delivered” vs “Cancelled” orders.
 Find customers who have never placed an order.
 List all products that have been ordered more than 2 times.
 
+22nd Jan 
+
+  if we put condition in grouping then we have to use 'having'
 
 
+--- views   --? 
+tables ---
+views  --- virtual table 
+store procedure
+functions
+trigger
+
+employee infor with department name ---each join
 
 
-
+TRIGGER --- ? database object
+              they called automatically / 
+              2 -- Before and After 
+                    Insert , update , delete 
+                    Before delete / after delete 
+                    Before insert / after insert
+                    Before update / after update 
+          
 
