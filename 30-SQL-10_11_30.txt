@@ -64,3 +64,132 @@ group by dept_name;
 select dept_name,count(*)as 'Total no of Employees' from employees,departments
 where departments.dept_id=employees.dept_id
 group by dept_name;
+
+-- show fetch dept_name having more then 1 employees 
+
+
+select dept_name,count(*)as 'Total no of Employees' from employees,departments
+where departments.dept_id=employees.dept_id
+group by dept_name having count(*)>1;
+
+-- display total salary of each dept
+
+
+select dept_name,sum(salary)as 'Sum of Salary' from employees,departments
+where departments.dept_id=employees.dept_id
+group by dept_name;
+
+-- display departname have total salary more then 100000
+
+select dept_name,sum(salary)as 'Sum of Salary' from employees,departments
+where departments.dept_id=employees.dept_id
+group by dept_name having sum(salary)>100000;
+
+----------------------------------------------------------------------------------------------------------
+create table departments(dept_id int primary key, 
+
+                          dept_name varchar(50));
+                          
+create table employees(emp_id int primary key, emp_name varchar(50),
+gender char(1), salary decimal(10,2),
+hire_date date, dept_id int,
+foreign key (dept_id) references departments(dept_id)); 
+
+iNSERT INTO departments VALUES
+(1, 'HR'),
+(2, 'Finance'),
+(3, 'Sales'),
+(4, 'IT');
+
+INSERT INTO employees VALUES
+(101, 'Amit Sharma', 'M', 60000, '2021-03-12', 3),
+(102, 'Priya Singh', 'F', 75000, '2019-11-20', 2),
+(103, 'Ravi Patel', 'M', 55000, '2022-01-05', 3),
+(104, 'Neha Verma', 'F', 90000, '2018-07-15', 4),
+(105, 'Karan Mehta', 'M', 50000, '2023-04-10', 1),
+(106, 'Sneha Rao', 'F', 95000, '2020-05-25', 4);
+
+
+select dept_name,count(*)as 'Total no of Employees' from employees,departments
+where departments.dept_id=employees.dept_id
+group by dept_name;
+
+
+-- show fetch dept_name having more then 1 employees 
+
+
+select dept_name,count(*)as 'Total no of Employees' from employees,departments
+where departments.dept_id=employees.dept_id
+group by dept_name having count(*)>1;
+
+-- display total salary of each dept
+
+
+select dept_name,sum(salary)as 'Sum of Salary' from employees,departments
+where departments.dept_id=employees.dept_id
+group by dept_name;
+
+-- display departname have total salary more then 100000
+
+select dept_name,sum(salary)as 'Sum of Salary' from employees,departments
+where departments.dept_id=employees.dept_id
+group by dept_name having sum(salary)>100000;
+
+
+create view emp_dept as select emp_name,salary,dept_name from departments,employees
+where departments.dept_id=employees.dept_id;
+
+select emp_name,dept_name from emp_dept;
+
+create or replace view emp_dept as select emp_name,dept_name from departments,employees
+where departments.dept_id=employees.dept_id;
+
+select * from emp_dept;
+
+
+insert into employees values(1001, 'Amit Sharma', 'M', 60000, '2021-03-12', 3);
+
+select * from emp_dept;
+
+TRIGGER
+
+select * from student;
+delimiter $$
+create trigger stu_del before delete on student 
+for each row
+begin 
+    insert into student_copy values(OLD.sid,OLD.sname);
+end$$
+
+delete from student where sid=2;
+delete from student where sid=1;
+select * from student_copy;
+select * from student;
+
+ANOTEHR EXAMPLE
+
+
+insert into student values(1,'asasas'),
+(2,'tttttt'),
+(3,'ssfdsfdf');
+
+create table student_copy(sid int,sname varchar(20));
+
+
+
+
+
+create table stu_audit(stu_id int , action varchar(20),created_at timestamp);
+
+delimiter $$
+create trigger stu_aud_insert after insert on student 
+for each row
+begin 
+    insert into stu_audit values(NEW.sid,'INSERTERD',now());
+end$$
+
+insert into student values(22,'test');
+insert into student values(453422,'dfgdfg');
+
+select * from stu_audit;
+
