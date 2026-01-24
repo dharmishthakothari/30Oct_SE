@@ -193,3 +193,20 @@ insert into student values(453422,'dfgdfg');
 
 select * from stu_audit;
 
+24th Jan
+
+delimiter @@
+create function getTotalSalaray(did int)
+returns decimal(10,2)
+reads sql data
+begin
+  declare totalSalary decimal(10,2);
+  select sum(salary) into totalSalary from employees,departments
+  where departments.dept_id=employees.dept_id and employees.dept_id=did
+  group by employees.dept_id;
+  return totalSalary;
+end@@
+  
+
+
+select getTotalSalaray(4);
