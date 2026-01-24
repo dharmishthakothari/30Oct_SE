@@ -332,3 +332,22 @@ TRIGGER --- ? database object
                     Before update / after update 
           
 
+Function : inbuild / user defined 
+          --- now , avg , sum , sum , 
+                    date
+                    string
+                    numeric
+
+
+CREATE FUNCTION GetFullName(first_name VARCHAR(50), last_name VARCHAR(50))
+RETURNS VARCHAR(100)
+---function name : GetFullName
+   paramter first_name , lst_name
+   return String 
+call
+
+GetFullName('dharmishtha','kothari') 
+dharmishtha kothari 
+
+select getFullName(firstname,lastname) from employees
+select getfullname(ename,email) from employees
