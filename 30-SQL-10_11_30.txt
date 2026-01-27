@@ -210,3 +210,28 @@ end@@
 
 
 select getTotalSalaray(4);
+
+27th Jan
+
+DELIMITER $$
+create procedure getEmployeeByDept(dname varchar(20))
+begin
+  select emp_name,dept_name,salary from employees,departments
+  where departments.dept_id=employees.dept_id
+  and dept_name=dname;
+end$$
+
+call getEmployeeByDept('IT');
+
+__________________________________________________________________________________________________
+ DELIMITER $$
+   create procedure countTotalEmpByDept(in dname varchar(20),out total_emp int)
+   begin
+      select count(emp_id) into total_emp from employees,departments
+      where departments.dept_id=employees.dept_id and dept_name=dname
+      group by dept_name;
+  end$$
+  
+  
+   call countTotalEmpByDept('Finance',@t);
+   select @t as 'Total no of employee';
