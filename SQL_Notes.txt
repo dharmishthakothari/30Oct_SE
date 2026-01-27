@@ -351,3 +351,9 @@ dharmishtha kothari
 
 select getFullName(firstname,lastname) from employees
 select getfullname(ename,email) from employees
+
+27th Jan
+          - functions - inbuild 
+                        user defined  -suyntax 
+                        de_id pass total_salary
+
