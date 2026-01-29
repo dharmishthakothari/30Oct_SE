@@ -357,3 +357,13 @@ select getfullname(ename,email) from employees
                         user defined  -suyntax 
                         de_id pass total_salary
 
+29th Jan
+
+Procedure --- GEt order count by customer name
+          --Get data By City
+
+select * from employees 
+resultset --10 records
+
+row by row ---ro1,row2,row3,row4,....
+
