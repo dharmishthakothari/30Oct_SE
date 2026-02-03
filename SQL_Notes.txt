@@ -367,3 +367,20 @@ resultset --10 records
 
 row by row ---ro1,row2,row3,row4,....
 
+3rd Feb
+
+delimiter $$
+create procedure check_Emp(id int)
+begin
+  declare emp_salary int;
+  declare ename varchar(20);
+  select salary,name into emp_salary,ename from employee where empId=id;
+ 
+  if emp_salary>5000 then 
+     select ename,"Senior Employee " as status;
+  else
+     select ename,"Normal Employee" as status;
+  end if;
+  
+end$$
+call check_Emp(3);
