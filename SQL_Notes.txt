@@ -442,3 +442,37 @@ begin
 end$$
 
 call add_emp();
+
+
+---5th Feb
+
+Rollback 
+commit
+
+
+Trigger ---even occurece task  , automatic execute eg. record delete backup , logges 
+insert before/after
+delete before/after
+update before/after
+
+create table emp_copy(id int,create_at timestamp);
+
+delimiter //
+create trigger trg_insert_emp 
+after INSERT
+on employee 
+for each row
+begin
+    insert into emp_copy values(NEW.empId,now());
+end //
+
+INSERT INTO EMPLOYEE VALUES (0001, 'Clark', 'Sales');
+INSERT INTO EMPLOYEE VALUES (0002, 'Dave', 'Accounting');
+INSERT INTO EMPLOYEE VALUES (6666, 'Ava', 'Sales');
+
+SELECT * from emp_copy;
+
+select * from employee;
+
+
+
