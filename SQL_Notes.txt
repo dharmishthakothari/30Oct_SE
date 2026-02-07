@@ -473,6 +473,96 @@ INSERT INTO EMPLOYEE VALUES (6666, 'Ava', 'Sales');
 SELECT * from emp_copy;
 
 select * from employee;
+7th Feb
+select empId,name,dept_name from department,EMPLOYEE
+where department.did=EMPLOYEE.dept_id;
+
+select empId,name,dept_name from EMPLOYEE 
+inner join department
+on
+department.did=EMPLOYEE.dept_id;
+
+_________________________________________________
+
+create table department (did int PRIMARY key,dept_name varchar(20));
+-- create
+CREATE TABLE EMPLOYEE (
+  empId INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  dept_id int ,
+  foreign key (dept_id)  references department(did)
+);
+
+
+insert into department values(1,'Sales'),(2,"Finanace"),
+(3,"Marketing"),(4,"HR");
+
+
+insert into EMPLOYEE values(101,'qqq',1),(102,'tttt',2),(103,'ssfsdf',2),
+(104,'vvvvv',1),(105,'ttttt',NULL),(106,'cvxcvcxv',NULL),(107,'dfsdfdf',NULL);
+-- fetch 
+SELECT * FROM EMPLOYEE;
+SELECT * from department;
 
 
 
+select empId,name,dept_name from EMPLOYEE
+left join department
+on
+department.did=EMPLOYEE.dept_id;
+
+
+select empId,name,dept_name from EMPLOYEE 
+inner join department
+on
+department.did=EMPLOYEE.dept_id;
+
+____________________________________________________________________________________
+
+  
+  ename TEXT NOT NULL,
+  salary decimal(10,2)
+);
+
+insert into EMPLOYEE1 values('eee',12000),('ccccc',20000);
+
+
+
+create table employee_bonus(ename varchar(20),old_salary decimal(10,2),new_salary decimal(10,2));
+
+
+DELIMITER $$
+
+create procedure cur_to_emp_bonus()
+begin
+  declare cur_salary decimal(10,2);
+
+  declare new_salary decimal(10,2);
+  declare cur_ename varchar(20);
+  declare done int default 0;
+  
+  declare cur1 cursor for
+  select ename,salary from employee1;
+  
+  
+  DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = 1;
+  
+  open cur1;
+  read_loop : loop
+  fetch cur1 into cur_ename,cur_salary;
+  
+  if done then
+    leave read_loop;
+  end if;
+  
+   SET new_salary = cur_salary+(cur_salary * 0.10);
+  
+  insert into employee_bonus values(cur_ename,cur_salary,new_salary);
+  end loop;
+  close cur1;
+  end$$
+  
+  call cur_to_emp_bonus();
+  
+
+select * from employee_bonus;
