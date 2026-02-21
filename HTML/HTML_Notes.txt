@@ -1,0 +1,40 @@
+HTML ---- 
+	Hypertext markup language  --- browser 
+	every thing is in form of tags
+<> - each tag have open and close except few 
+<> -- 
+
+content/text
+images 
+menus
+list
+tables 
+frames 
+
+extension -- .html
+ p , div ,br 
+<html>
+<head><title></title></head>
+<body>
+This is my first html file
+</body>
+</html>
+
+--- a tag acnchor tag is use for link 
+
+table --- row and column/data
+
+name  ss  maths English
+qwert 78   80    50
+zzzz  77   90    78
+
+form --- submit registration , login , login as -student/staff-admin - drop down 
+Enter username textbox
+Enter passwrod password
+Submit
+<form>
+<input 
+
+Lab Task : create form in table tag
+
+
