@@ -37,4 +37,16 @@ Submit
 
 Lab Task : create form in table tag
 
+b, i , p , br, table , form , img , a ,input , select ....
+
+
+CSS ---- cascading style sheet 
+formating/style
+web application ---10 page -- 9 table formating --- css 
+table 
+
+
+---inline
+---same file/internal 
+---externally 
 
