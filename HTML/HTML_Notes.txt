@@ -50,3 +50,16 @@ table
 ---same file/internal 
 ---externally 
 
+5th march 
+--box ,padding ,margin
+
+
+HTML WebSite 
+
+4 pages 
+1. Home Page (information about the company...)
+2. Location
+3. Contact Us/Enquiry Form 
+4. Course Information (at least 4 courses , whatever course i am selecting that should be displayed)
+---u
+
